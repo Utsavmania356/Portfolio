@@ -48,8 +48,8 @@ const AboutSection = () => {
             {/* Card glow effect */}
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-cyan-accent/20 to-primary/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
-            <div className="relative glass-card p-8 lg:p-12 border border-white/10 backdrop-blur-xl">
-              <div className="grid md:grid-cols-3 gap-12 items-center">
+            <div className="relative glass-card p-4 sm:p-6 md:p-8 lg:p-12 border border-white/10 backdrop-blur-xl">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 items-center">
                 {/* Enhanced Avatar with Profile Image */}
                 <motion.div 
                   className="flex justify-center md:justify-start"
@@ -59,7 +59,7 @@ const AboutSection = () => {
                   <div className="relative">
                     {/* Glow effect matching image's blue glow */}
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 via-cyan-accent/30 to-purple-500/20 rounded-3xl blur-3xl" />
-                    <div className="relative w-48 h-48 rounded-3xl overflow-hidden border-2 border-cyan-400/50 group-hover:border-cyan-400/80 transition-all duration-500 shadow-2xl shadow-cyan-500/20 bg-transparent">
+                    <div className="relative w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-3xl overflow-hidden border-2 border-cyan-400/50 group-hover:border-cyan-400/80 transition-all duration-500 shadow-2xl shadow-cyan-500/20 bg-transparent">
                       <img 
                         src={profileImage} 
                         alt="Utsav Mishra" 

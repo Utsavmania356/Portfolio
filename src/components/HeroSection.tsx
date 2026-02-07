@@ -122,7 +122,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
-                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1]"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black tracking-tight leading-[1]"
               >
                 <span className="block text-gradient bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">UTSAV</span>
               </motion.h1>
@@ -130,7 +130,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1]"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black tracking-tight leading-[1]"
               >
                 <span className="block text-foreground/90">MISHRA</span>
               </motion.h1>
@@ -180,21 +180,21 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="flex gap-8 pt-8"
+              className="flex gap-4 sm:gap-6 lg:gap-8 pt-4 sm:pt-8 flex-wrap sm:flex-nowrap"
             >
               <div>
-                <div className="text-3xl font-bold text-primary">7+</div>
-                <div className="text-sm text-muted-foreground">Projects</div>
+                <div className="text-2xl sm:text-3xl font-bold text-primary">7+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Projects</div>
               </div>
-              <div className="w-px bg-border" />
+              <div className="w-px bg-border hidden sm:block" />
               <div>
-                <div className="text-3xl font-bold text-primary">5+</div>
-                <div className="text-sm text-muted-foreground">Technologies</div>
+                <div className="text-2xl sm:text-3xl font-bold text-primary">5+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Technologies</div>
               </div>
-              <div className="w-px bg-border" />
+              <div className="w-px bg-border hidden sm:block" />
               <div>
-                <div className="text-3xl font-bold text-primary">2026</div>
-                <div className="text-sm text-muted-foreground">Graduating</div>
+                <div className="text-2xl sm:text-3xl font-bold text-primary">2026</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Graduating</div>
               </div>
             </motion.div>
           </div>

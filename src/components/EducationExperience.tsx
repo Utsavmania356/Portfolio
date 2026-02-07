@@ -60,7 +60,7 @@ const EducationExperience = () => {
           {/* Timeline */}
           <div className="max-w-3xl mx-auto relative">
             {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent md:-translate-x-1/2" />
+            <div className="absolute left-4 sm:left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent md:-translate-x-1/2" />
 
             {timelineData.map((item, index) => {
               const Icon = item.icon;
@@ -76,7 +76,7 @@ const EducationExperience = () => {
                 >
                   {/* Enhanced Timeline dot */}
                   <motion.div 
-                    className="absolute left-8 md:left-1/2 md:-translate-x-1/2 z-10"
+                    className="absolute left-4 sm:left-6 md:left-1/2 md:-translate-x-1/2 z-10"
                     whileHover={{ scale: 1.2 }}
                   >
                     <div className={`relative w-6 h-6 rounded-full border-4 border-background ${
@@ -89,7 +89,7 @@ const EducationExperience = () => {
                   </motion.div>
 
                   {/* Content */}
-                  <div className={`ml-20 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
+                  <div className={`ml-14 sm:ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
                     <motion.div 
                       className="group relative"
                       whileHover={{ y: -4 }}
@@ -97,7 +97,7 @@ const EducationExperience = () => {
                       {/* Card glow effect */}
                       <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-cyan-accent/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       
-                      <div className="relative glass-card p-6 border border-white/10 backdrop-blur-xl hover:border-primary/40 transition-all duration-300">
+                      <div className="relative glass-card p-4 sm:p-5 md:p-6 border border-white/10 backdrop-blur-xl hover:border-primary/40 transition-all duration-300">
                         <div className={`flex items-center gap-3 mb-4 ${index % 2 === 0 ? "md:justify-end" : ""}`}>
                           <motion.div 
                             className={`w-12 h-12 rounded-xl flex items-center justify-center ${

@@ -113,7 +113,7 @@ const SkillsSection = () => {
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 mb-12"
           >
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
@@ -127,7 +127,7 @@ const SkillsSection = () => {
                   {/* Card background glow */}
                   <div className={`absolute -inset-0.5 bg-gradient-to-br ${category.color} rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                   
-                  <div className="relative glass-card p-6 border border-white/10 backdrop-blur-xl h-full">
+                  <div className="relative glass-card p-4 sm:p-5 md:p-6 border border-white/10 backdrop-blur-xl h-full">
                     <div className="flex items-center gap-3 mb-6">
                       <motion.div 
                         className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/30 to-cyan-accent/30 flex items-center justify-center group-hover:from-primary/50 group-hover:to-cyan-accent/50 transition-all duration-300"

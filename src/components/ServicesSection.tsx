@@ -67,7 +67,7 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 max-w-5xl mx-auto mb-12">
             {opportunities.map((item, index) => {
               const Icon = item.icon;
               return (
@@ -82,7 +82,7 @@ const ServicesSection = () => {
                   {/* Card glow effect */}
                   <div className={`absolute -inset-0.5 bg-gradient-to-br ${item.color} rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                   
-                  <div className="relative glass-card p-8 text-center border border-white/10 backdrop-blur-xl h-full flex flex-col">
+                  <div className="relative glass-card p-6 sm:p-7 md:p-8 text-center border border-white/10 backdrop-blur-xl h-full flex flex-col">
                     <motion.div 
                       className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/30 to-cyan-accent/30 flex items-center justify-center mx-auto mb-6 group-hover:from-primary/50 group-hover:to-cyan-accent/50 transition-all duration-300"
                       whileHover={{ scale: 1.1, rotate: 10 }}

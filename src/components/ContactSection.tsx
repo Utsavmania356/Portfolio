@@ -83,17 +83,17 @@ const ContactSection = () => {
                     {/* Card glow effect */}
                     <div className={`absolute -inset-0.5 bg-gradient-to-r ${link.color} rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                     
-                    <div className="relative glass-card p-6 flex items-center gap-5 border border-white/10 backdrop-blur-xl hover:border-primary/40 transition-all duration-300">
+                    <div className="relative glass-card p-4 sm:p-5 md:p-6 flex items-center gap-3 sm:gap-5 border border-white/10 backdrop-blur-xl hover:border-primary/40 transition-all duration-300">
                       <motion.div 
-                        className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/30 to-cyan-accent/30 flex items-center justify-center flex-shrink-0 group-hover:from-primary/50 group-hover:to-cyan-accent/50 transition-all duration-300"
+                        className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-primary/30 to-cyan-accent/30 flex items-center justify-center flex-shrink-0 group-hover:from-primary/50 group-hover:to-cyan-accent/50 transition-all duration-300"
                         whileHover={{ scale: 1.1 }}
                       >
-                        <Icon className="w-6 h-6 text-primary" />
+                        <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                       </motion.div>
                       
                       <div className="flex-1 min-w-0">
                         <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">{link.label}</p>
-                        <p className="font-semibold text-foreground truncate group-hover:text-primary transition-colors mt-1">
+                        <p className="text-sm sm:text-base font-semibold text-foreground truncate group-hover:text-primary transition-colors mt-1">
                           {link.value}
                         </p>
                       </div>
@@ -121,7 +121,7 @@ const ContactSection = () => {
               {/* Card glow effect */}
               <div className="absolute -inset-0.5 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <div className="relative glass-card p-6 border border-white/10 backdrop-blur-xl text-center">
+              <div className="relative glass-card p-4 sm:p-5 md:p-6 border border-white/10 backdrop-blur-xl text-center">
                 <div className="flex items-center justify-center gap-2 text-muted-foreground group-hover:text-foreground transition-colors">
                   <motion.div 
                     whileHover={{ scale: 1.2 }}
